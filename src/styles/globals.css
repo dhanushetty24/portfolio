@@ -1,0 +1,39 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050810;
+  color: #10e956;
+  font-family: cursive;
+  line-height: 1.6;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+/* Flex utility */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+/* Responsive utility */
+@media (max-width: 768px) {
+  /* Mobile styles */
+  body {
+      font-size: 14px; /* Adjust font size for mobile */
+  }
+}
