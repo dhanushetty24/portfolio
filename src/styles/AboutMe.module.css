@@ -1,0 +1,45 @@
+.aboutSection {
+  padding: 64px 32px;
+  background-color: #050810;
+  color: white;
+}
+
+.aboutContent,
+.tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.toolItem {
+  text-align: center;
+  flex: 1 1 24%;         /* Grow and shrink as needed, taking up roughly 23% of the container width */
+  margin-right: 1%;            /* Adds space between the items */
+}
+
+.left {
+  flex: 1;
+  margin-right: 32px;
+}
+
+.left p {
+  margin-bottom: 24px;
+}
+
+.right {
+  flex: 1;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background-color: #1a1a1a;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  color: #10e956;
+}
