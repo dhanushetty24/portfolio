@@ -1,4 +1,61 @@
 .bannerSection { 
   text-align: 'center';
-   padding: '32px' 
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../public/space.jpg");
+  /* Set a specific height for the hero image */
+  height: 450px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.wobble {
+    -webkit-animation: wobble .5s infinite;
+    animation: wobble 2.5s infinite;
+    display: inline-block;
+    font-size: 16px;
+}
+
+@keyframes wobble {
+  0%, 100% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+  }
+
+  15% {
+      -webkit-transform: translateX(-12px) rotate(-10deg);
+      transform: translateX(-12px) rotate(-10deg);
+  }
+
+  30% {
+      -webkit-transform: translateX(calc(12px / 2)) rotate(10deg);
+      transform: translateX(calc(12px / 2)) rotate(10deg);
+  }
+
+  45% {
+      -webkit-transform: translateX(calc(-12px / 2)) rotate(calc(-10deg / 1.8));
+      transform: translateX(calc(-12px / 2)) rotate(calc(-10deg / 1.8));
+  }
+
+  60% {
+      -webkit-transform: translateX(calc(12px / 3.3)) rotate(calc(10deg / 3));
+      transform: translateX(calc(12px / 3.3)) rotate(calc(10deg / 3));
+  }
+
+  75% {
+      -webkit-transform: translateX(calc(-12px / 5.5)) rotate(calc(-10deg / 5));
+      transform: translateX(calc(-12px / 5.5)) rotate(calc(-10deg / 5));
+  }
 }

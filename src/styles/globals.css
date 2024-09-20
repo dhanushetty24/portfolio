@@ -5,9 +5,20 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 body {
   background-color: #050810;
-  color: #10e956;
+  color: white;
   font-family: cursive;
   line-height: 1.6;
 }
@@ -36,4 +47,48 @@ body {
   body {
       font-size: 14px; /* Adjust font size for mobile */
   }
+}
+
+a {
+  color: #10e956;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+  color: #10e956;
+}
+
+button {
+  background-color: #10e956;
+  color: #050810;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #08c24b;
+}
+
+.center {
+  text-align: center;
+}
+
+.scroll-indicator {
+  display: block;
+  margin: 1.5rem auto;
+  height: 20px;
+  width: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+  0% { opacity: 0; transform: translateY(-10px); }
+  50% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(10px); }
 }

@@ -3,18 +3,12 @@ import SkillsSection from '@/components/SkillsSection'
 
 const AboutMe: React.FC = () => {
   return (
-    <section className={styles.aboutSection}>
-      <h2>About Me</h2>
+    <section id= 'about' className={styles.aboutSection}>
       <div className={styles.aboutContent}>
         <div className={styles.left}>
+          <h2>About Me</h2>
           <p>
-            I'm a <strong>Backend Developer</strong> with 5 years of experience in designing
-            REST APIs and backend systems using <strong>Node.js</strong> and <strong>TypeScript</strong>.
-            I am also proficient with frontend technologies such as <strong>React</strong>.
-          </p>
-          <p>
-            My goal is to build performant and scalable systems that improve user experience and
-            contribute to business growth. Check out my projects to see the work I’ve done.
+          I'm a Full Stack Web Developer specializing in crafting scalable, high-performance applications. With expertise in backend technologies like ExpressJs, NestJs, and NodeJs, I build robust APIs and server-side logic. My database skills span MongoDB and MySQL, ensuring data is structured and efficient. On the frontend, I bring ideas to life with ReactJs and NextJs, delivering seamless and dynamic user experiences. Additionally, as an AWS-certified developer, I leverage cloud services to make applications scalable, secure, and ready for the future. Whether it's the backend, frontend, or cloud, I've got it covered!
           </p>
         </div>
         <SkillsSection custom = {styles}/>

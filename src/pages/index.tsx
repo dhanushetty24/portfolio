@@ -4,11 +4,11 @@ import Navbar from "@/components/Navbar";
 
 const Home: React.FC = () => {
   return (
-    <>
+    <main className="container">
       <Navbar />
       <Banner />
       <AboutMe />
-    </>
+    </main>
   );
 };
 
