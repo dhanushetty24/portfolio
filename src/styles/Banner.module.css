@@ -24,6 +24,7 @@
     animation: wobble 2.5s infinite;
     display: inline-block;
     font-size: 16px;
+    padding-left: 5px;
 }
 
 @keyframes wobble {
@@ -59,3 +60,43 @@
       transform: translateX(calc(-12px / 5.5)) rotate(calc(-10deg / 5));
   }
 }
+
+
+.scroll {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+}
+
+.scrollIndicator {
+    display: block;
+    margin: 1.5rem auto;
+    height: 40px;
+    width: 25px;
+    border: 2px solid purple;
+    border-radius: 40%;
+    overflow: hidden;
+  }
+
+  .scrollIndicator::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 40px;
+    left: 42%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 50%;
+    opacity: 1;
+    animation: scroll 1.3s infinite;
+    -webkit-animation: scroll 1.3s infinite;
+  }
+  
+  @keyframes scroll {
+    0% { opacity: 0; transform: translateY(-10px); }
+    50% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(10px); }
+  }

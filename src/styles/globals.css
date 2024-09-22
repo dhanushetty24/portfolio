@@ -1,5 +1,5 @@
 /* Reset default margins and paddings */
-* {
+*, *::after, *::before  {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,8 +19,9 @@ html {
 body {
   background-color: #050810;
   color: white;
-  font-family: cursive;
+  font-family: fantasy;
   line-height: 1.6;
+  letter-spacing: .5px;
 }
 
 /* Utility classes */
@@ -50,17 +51,17 @@ body {
 }
 
 a {
-  color: #10e956;
+  color: purple;
   text-decoration: none;
 }
 
 h1, h2, h3 {
   margin-bottom: 1rem;
-  color: #10e956;
+  color: purple;
 }
 
 button {
-  background-color: #10e956;
+  background-color: purple;
   color: #050810;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -77,18 +78,3 @@ button:hover {
   text-align: center;
 }
 
-.scroll-indicator {
-  display: block;
-  margin: 1.5rem auto;
-  height: 20px;
-  width: 20px;
-  border: 2px solid white;
-  border-radius: 50%;
-  animation: scroll 2s infinite;
-}
-
-@keyframes scroll {
-  0% { opacity: 0; transform: translateY(-10px); }
-  50% { opacity: 1; }
-  100% { opacity: 0; transform: translateY(10px); }
-}
