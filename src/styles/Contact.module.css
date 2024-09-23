@@ -1,6 +1,5 @@
 .contactSection {
   padding: 4rem 2rem;
-  background-color: #1a1a1a;
   border-radius: 8px;
   color: white;
   margin: 2rem 0;
@@ -47,7 +46,7 @@
   border-color: rgb(132, 6, 132);
   border-width: 1px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all .5s ease-in-out;
   width: 50%;
 }
 

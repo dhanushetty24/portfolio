@@ -20,7 +20,7 @@
 
 .navLinks a {
   color: #fff;
-  transition: color 0.3s ease;
+  transition: all .5s ease-in-out;
 }
 
 .navLinks a:hover {
