@@ -9,7 +9,7 @@
 
 .container {
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../public/space.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../../public/space.jpg");
   /* Set a specific height for the hero image */
   height: 80vh;
   /* Position and center the image to scale nicely on all screens */
