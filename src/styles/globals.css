@@ -1,3 +1,19 @@
+/* Define the regular weight (400) of Montserrat Alternates */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url('../fonts/MontserratAlternates-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Define the bold weight (700) of Montserrat Alternates */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url('../fonts/MontserratAlternates-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* Reset default margins and paddings */
 *, *::after, *::before  {
   margin: 0;
@@ -19,9 +35,8 @@ html {
 body {
   background-color: #050810;
   color: white;
-  font-family: fantasy;
+  font-family: 'Montserrat Alternates', sans-serif;
   line-height: 1.6;
-  letter-spacing: .5px;
 }
 
 /* Utility classes */
@@ -51,17 +66,22 @@ body {
 }
 
 a {
-  color: purple;
+  color: rgb(132, 6, 132);
   text-decoration: none;
 }
 
 h1, h2, h3 {
   margin-bottom: 1rem;
-  color: purple;
+  color: rgb(132, 6, 132);
+}
+
+h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 700;
 }
 
 button {
-  background-color: purple;
+  background-color: rgb(132, 6, 132);
   color: #050810;
   border: none;
   padding: 0.75rem 1.5rem;
