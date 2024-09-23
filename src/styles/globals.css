@@ -39,6 +39,12 @@ body {
   line-height: 1.6;
 }
 
+button,
+input,
+textarea {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
 /* Utility classes */
 .text-center {
   text-align: center;

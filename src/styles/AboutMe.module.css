@@ -8,7 +8,6 @@
 .tools {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   flex-wrap: wrap;
 }
 
@@ -38,4 +37,5 @@
   margin-bottom: 8px;
   border-radius: 5px;
   color: rgb(132, 6, 132);
+  font-size: 20px;
 }

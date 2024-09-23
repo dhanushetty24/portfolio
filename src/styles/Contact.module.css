@@ -1,0 +1,60 @@
+.contactSection {
+  padding: 4rem 2rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  color: white;
+  margin: 2rem 0;
+}
+
+.contactSection h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input, .textarea {
+  padding: 1rem;
+  background-color: #050810;
+  border: 2px solid rgb(132, 6, 132);
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.alignButton {
+  text-align: right;
+}
+
+.submitBtn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: rgb(132, 6, 132);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border-style: solid;
+  border-color: rgb(132, 6, 132);
+  border-width: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 50%;
+}
+
+.submitBtn:hover {
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: rgb(132, 6, 132);
+  color: rgb(132, 6, 132);
+  border-width: .5px;
+}
