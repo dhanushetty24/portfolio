@@ -88,3 +88,21 @@ h1 {
   color: #A64CA6;
 }
 
+button {
+  background-color: #A64CA6;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #A64CA6;
+  border-width: 1px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: #A64CA6;
+  color: #A64CA6;
+  border-width: .5px;
+}

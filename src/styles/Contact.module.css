@@ -37,15 +37,7 @@
 
 .submitBtn {
   padding: 15px 30px;
-  font-size: 1rem;
-  background-color: #A64CA6;
-  color: rgb(255, 255, 255);
-  border-radius: 8px;
-  border-style: solid;
-  border-color: #A64CA6;
-  border-width: 1px;
-  cursor: pointer;
-  transition: all .5s ease-in-out;
+  font-size: 15px;
   width: 50%;
 }
 

@@ -4,13 +4,13 @@ import styles from '../styles/Contact.module.css';
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
+  console.log(formData)
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
   };
 
   return (
@@ -50,7 +50,7 @@ const ContactForm: React.FC = () => {
           />
         </div>
         <div className= {styles.alignButton}>
-          <button type="submit" className={styles.submitBtn}>Submit</button>
+          <button type="submit" className={`button ${styles.submitBtn}`}>Submit</button>
         </div>
       </form>
     </section>
