@@ -15,7 +15,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <section id="contact" className={styles.contactSection}>
-      <h2>Contact Me</h2>
+      <h2>Get In Touch!</h2>
       <form onSubmit={handleSubmit} className={styles.form}>
         <div>
           <input

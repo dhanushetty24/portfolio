@@ -106,3 +106,10 @@ button:hover {
   color: #A64CA6;
   border-width: .5px;
 }
+
+
+.imageWrapper {
+  width: 100%; /* Make the container responsive */
+  aspect-ratio: 1 / 1; /* Ensure it remains square */
+  overflow: hidden;
+}

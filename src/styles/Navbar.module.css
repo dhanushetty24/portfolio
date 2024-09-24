@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 10px;
   background-color: #050810;
 }
 
@@ -28,14 +28,18 @@
   color: #A64CA6;
 }
 
-.logoWrapper  {
+.logoWrapper {
   display: inline-block;
-  width: 65px; /* Match the Image size */
-  height: 65px; /* Match the Image size */
-  overflow: hidden;
-  border-radius: 50%;
-  transition: transform 0.5s ease-in-out; /* Smooth transition */
+  border-radius: 50%; /* Keep the circular shape */
+  max-width: 65px; /* Set the maximum width */
 }
+
+.logoWrapper img {
+  width: 100%; /* Make the image responsive to the container */
+  height: 100%; /* Ensure it covers the entire wrapper */
+  object-fit: cover; /* Ensures image scales correctly without distortion */
+}
+
 
 .logoWrapper img {
   object-fit: cover; /* Ensure the image fills the circular container */

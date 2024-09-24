@@ -1,27 +1,17 @@
 // components/Experience.tsx
 import { useState } from 'react';
 import styles from '../styles/Experience.module.css';
+import Image from 'next/image';
 
 interface ExperienceProps {
   companyName: string;
   jobTitle: string;
   jobDetails: string[];
   duration: string;
+  logo: string;
 }
 
 const experiences: ExperienceProps[] = [
-  {
-    companyName: 'ESZMELETLEN HOLDING CO',
-    jobTitle: 'Software Developer',
-    jobDetails: [
-      'Contributed to the development of a NestJs and ReactJs-based Interactive Form Builder from scratch, delivering a seamless user interface and robust backend functionality.',
-      'Developed and integrated a custom service using Google Translate API for automating translations across the entire frontend website, streamlining multilingual support.',
-      'Implemented email integrations with services like Mailgun, SendGrid, and Sendinblue in a custom Email Builder project.',
-      'Integrated third-party services such as Zapier, Slack, and Notion.',
-      'Built core features like domain creation, audit logs, and webhooks using Clickhouse for querying large datasets.',
-    ],
-    duration: 'Oct 2021 - Oct 2022',
-  },
   {
     companyName: 'axioned.',
     jobTitle: 'Web Developer',
@@ -33,7 +23,35 @@ const experiences: ExperienceProps[] = [
       'Worked with Express.Js and Sequelize ORM to handle large amounts of user interaction data.',
     ],
     duration: 'Aug 2019 - Sep 2021',
+    logo: '/axioned.jpg'
   },
+  {
+    companyName: 'Eszmeletlen Holding Co.',
+    jobTitle: 'Software Developer',
+    jobDetails: [
+      'Contributed to the development of a NestJs and ReactJs-based Interactive Form Builder from scratch, delivering a seamless user interface and robust backend functionality.',
+      'Developed and integrated a custom service using Google Translate API for automating translations across the entire frontend website, streamlining multilingual support.',
+      'Implemented email integrations with services like Mailgun, SendGrid, and Sendinblue in a custom Email Builder project.',
+      'Integrated third-party services such as Zapier, Slack, and Notion.',
+      'Built core features like domain creation, audit logs, and webhooks using Clickhouse for querying large datasets.',
+    ],
+    duration: 'Oct 2021 - Oct 2022',
+    logo: '/eszmeletlen.jpeg'
+
+  },
+  {
+    companyName: 'CitiusTech',
+    jobTitle: 'Sr.Software Developer',
+    jobDetails: [
+      'Contributed to the development of a NestJs and ReactJs-based interactive website, delivering a seamless user interface and robust backend functionality for patients.',
+      'Maintained backend automation processes, including AMI updates, ensuring smooth and efficient deployments.',
+      'Collaborated on the migration of frontend services to ReactJS using TypeScript, enhancing the system\'s performance and scalability.',
+      'Created and updated multiple APIs to support the migration process.',
+      'Contributed to the creation of microservices using NextJs, helping to develop scalable and modular systems.',
+    ],
+    duration: 'Oct 2022 - Present',
+    logo: '/citiustech.png'
+  }
 ];
 
 const Experience = () => {
@@ -53,7 +71,15 @@ const Experience = () => {
       <div className={styles.cardContainer}>
         {experiences.map((exp, index) => (
           <div key={index} className={styles.card}>
-            <h3>{exp.jobTitle}</h3>
+            <div className={`imageWrapper ${styles.companysLogo}`}>
+              <Image
+              src= {exp.logo }
+              alt= 'company logo'
+              objectFit="cover"
+              width={200}
+              height={120}/>
+            </div>
+            <h3>{exp.companyName}</h3>
             <button className={`button ${styles.readMoreButton}`} onClick={() => openModal(exp)}>
               Read More
             </button>

@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
     <nav className={styles.navbar}>
       <div className={styles.logo}>
         <h1 className={styles.navbar}>
-          <div className={styles.logoWrapper }>
+          <div className={`imageWrapper ${styles.logoWrapper}`}>
             <Image  
             src='/logo.jpeg' 
             alt= 'logo'
