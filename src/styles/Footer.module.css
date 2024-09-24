@@ -1,14 +1,13 @@
 .footer {
   background-color: #050810;
-  /* color: white; */
-  padding: 64px 0;
+  /* color: #F0F0F0; */
+  padding: 30px 2%;
 }
 
 .footerContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 32px;
 }
 
 .leftSection h4 {
@@ -34,13 +33,13 @@
 
 .socialIcons a {
   font-size: 24px;
-  color: white;
+  color: #F0F0F0;
   text-decoration: none;
   transition: all .5s ease-in-out;
 }
 
 .socialIcons a:hover {
-  color: rgb(132, 6, 132);
+  color: #A64CA6;
 }
 
 .footerBottom {

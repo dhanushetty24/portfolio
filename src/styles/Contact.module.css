@@ -1,13 +1,12 @@
 .contactSection {
-  padding: 4rem 2rem;
+  padding: 30px 2%;
   border-radius: 8px;
-  color: white;
-  margin: 2rem 0;
+  color: #F0F0F0;
 }
 
 .contactSection h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .form {
@@ -19,10 +18,10 @@
 }
 
 .input, .textarea {
-  padding: 1rem;
+  padding: 2%;
   background-color: #050810;
-  border: 2px solid rgb(132, 6, 132);
-  color: white;
+  border: 2px solid #A64CA6;
+  color: #F0F0F0;
   border-radius: 8px;
   width: 100%;
 }
@@ -37,13 +36,13 @@
 }
 
 .submitBtn {
-  padding: 1rem 2rem;
+  padding: 15px 30px;
   font-size: 1rem;
-  background-color: rgb(132, 6, 132);
+  background-color: #A64CA6;
   color: rgb(255, 255, 255);
   border-radius: 8px;
   border-style: solid;
-  border-color: rgb(132, 6, 132);
+  border-color: #A64CA6;
   border-width: 1px;
   cursor: pointer;
   transition: all .5s ease-in-out;
@@ -53,7 +52,7 @@
 .submitBtn:hover {
   background-color: rgb(255, 255, 255);
   border-style: solid;
-  border-color: rgb(132, 6, 132);
-  color: rgb(132, 6, 132);
+  border-color: #A64CA6;
+  color: #A64CA6;
   border-width: .5px;
 }

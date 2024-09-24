@@ -8,7 +8,7 @@
 
 /* Define the bold weight (700) of Montserrat Alternates */
 @font-face {
-  font-family: 'Montserrat Alternates';
+  font-family: 'Montserrat Alternates Bold';
   src: url('../fonts/MontserratAlternates-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
@@ -34,10 +34,11 @@ html {
 
 body {
   background-color: #050810;
-  color: white;
+  color: #F0F0F0;
   font-family: 'Montserrat Alternates', sans-serif;
   line-height: 1.6;
   transition: all .5s ease-in-out;
+  letter-spacing: .5px;
 }
 
 button,
@@ -73,35 +74,17 @@ textarea {
 }
 
 a {
-  color: rgb(132, 6, 132);
+  color: #A64CA6;
   text-decoration: none;
 }
 
-h1, h2, h3, h4 {
-  margin-bottom: 15px;
-  color: rgb(132, 6, 132);
+h2, h3, h4 {
+  margin-bottom: 10px;
+  color: #A64CA6;
 }
 
 h1 {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-weight: 700;
-}
-
-button {
-  background-color: rgb(132, 6, 132);
-  color: #050810;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all .5s ease-in-out;
-}
-
-button:hover {
-  background-color: #08c24b;
-}
-
-.center {
-  text-align: center;
+  font-family: 'Montserrat Alternates Bold', sans-serif;
+  color: #A64CA6;
 }
 

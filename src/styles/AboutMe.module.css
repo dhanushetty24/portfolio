@@ -1,7 +1,7 @@
 .aboutSection {
-  padding: 64px 32px;
+  padding: 30px 2%;
   background-color: #050810;
-  color: white;
+  color: #F0F0F0;
 }
 
 .aboutContent,
@@ -19,7 +19,7 @@
 
 .left {
   flex: 1;
-  margin-right: 32px;
+  margin-right: 3%;
 }
 
 .right {
@@ -28,7 +28,6 @@
 
 .skills {
   list-style: none;
-  padding: 0;
 }
 
 .skills li {
@@ -36,6 +35,6 @@
   padding: 8px 16px;
   margin-bottom: 8px;
   border-radius: 5px;
-  color: rgb(132, 6, 132);
+  color: #A64CA6;
   font-size: 20px;
 }
