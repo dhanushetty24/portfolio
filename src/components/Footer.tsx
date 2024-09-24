@@ -1,5 +1,6 @@
 import styles from '../styles/Footer.module.css';
-import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
@@ -14,20 +15,20 @@ const Footer: React.FC = () => {
         <div className={styles.rightSection}>
           <h4>SOCIAL</h4>
           <div className={styles.socialIcons}>
-            <a href="https://www.linkedin.com/in/dhanush-shetty-857625165/" target="_blank" aria-label="LinkedIn">
+            <Link href="https://www.linkedin.com/in/dhanush-shetty-857625165/" target="_blank" aria-label="LinkedIn">
               <FaLinkedin />
-            </a>
-            <a href="https://github.com/dhanushetty24" target="_blank" aria-label="Github">
+            </Link>
+            <Link href="https://github.com/dhanushetty24" target="_blank" aria-label="Github">
               <FaGithub />
-            </a>
-            <a href="https://www.instagram.com/dhanushetty24" target="_blank" aria-label="Instagram">
+            </Link>
+            <Link href="https://www.instagram.com/dhanushetty24" target="_blank" aria-label="Instagram">
               <FaInstagram />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <p>&copy; 2024. Made by <a rel="noreferrer" target="_blank" href="http://localhost:3000/">Dhanush Shetty</a></p>
+        <p>&copy; 2024. Made by <Link rel="noreferrer" target="_blank" href="http://localhost:3000/">Dhanush Shetty</Link></p>
       </div>
     </footer>
   );

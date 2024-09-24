@@ -3,7 +3,13 @@ const skills = [
   'MongoDb', 'MySql', 'Nestjs', 'React', 'NextJs', 'AWS'
 ];
 
-const SkillsSection = ({custom}) => {
+interface SkillsSectionProps {
+  custom: { [key: string]: string };
+}
+
+
+
+const SkillsSection: React.FC<SkillsSectionProps> =  ({custom}) => {
   return (
     <div className={custom.right}>
       <h2>My Skills</h2>

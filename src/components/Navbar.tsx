@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
             width={65}
             height={65}/>
           </div>
-          <a href="/">Dhanush Shetty</a>
+          <Link href="/">Dhanush Shetty</Link>
         </h1>
       </div>
       <ul className={styles.navLinks}>
