@@ -1,0 +1,40 @@
+.screen {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #050810;
+  text-align: center;
+}
+
+.svgDimentions {
+  width: 40px;
+  height: 40px;
+}
+
+.message{
+  color: #A64CA6;
+  animation: fade 4s ease-in-out infinite;
+  transition: all .5s ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+ .svgStyle{
+  margin: auto;
+  position: relative;
+  top: 271px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ }

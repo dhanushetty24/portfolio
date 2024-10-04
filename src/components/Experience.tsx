@@ -43,7 +43,7 @@ const experiences: ExperienceProps[] = [
     companyName: 'CitiusTech',
     jobTitle: 'Sr.Software Developer',
     jobDetails: [
-      'Contributed to the development of a NestJs and ReactJs-based interactive website, delivering a seamless user interface and robust backend functionality for patients.',
+      'Contributed to the development of a NestJs and ReactJs-based interactive website, utilizing GraphQL for efficient API management, and delivering a seamless user interface and robust backend functionality for end-users.',
       'Maintained backend automation processes, including AMI updates, ensuring smooth and efficient deployments.',
       'Collaborated on the migration of frontend services to ReactJS using TypeScript, enhancing the system\'s performance and scalability.',
       'Created and updated multiple APIs to support the migration process.',

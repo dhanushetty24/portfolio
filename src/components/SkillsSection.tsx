@@ -1,6 +1,6 @@
 const skills = [
   'HTML', 'CSS', 'Javascript', 'TypeScript', 'Node.js', 'ExpressJs',
-  'MongoDb', 'MySql', 'Nestjs', 'React', 'NextJs', 'AWS'
+  'MongoDb', 'MySql', 'Graphql', 'Nestjs', 'React', 'NextJs', 'AWS'
 ];
 
 interface SkillsSectionProps {
