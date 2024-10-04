@@ -1,9 +1,6 @@
 import styles from '../styles/Loading.module.css';
-interface LoadingProps {
-  // Add any props you need for your loading component
-}
 
-const Loading: React.FC<LoadingProps> = () => {
+const Loading: React.FC = () => {
   return (
     <div className={styles.screen}>
       <div className={styles.svgStyle}>
